@@ -11,18 +11,20 @@ body {
   border: 2px solid #d3810f;
 }
 .btn-primary {
-  background: #d3810f;
-  color: #0d0d0d;
-}
-.btn-primary:hover {
-  background: #d3810f;
-}
-.toggle-btn {
   background: #2c2c2c;
   color: #d3810f;
 }
+.btn-primary:hover {
+  background: #d3810f;
+  color: white;
+}
+.toggle-btn {
+  color: white;
+  background: #d3810f;
+}
 .toggle-btn:hover {
-  background: #3d3d3d;
+  color: #d3810f;
+  background: #2c2c2c;
 }
 .mobile-menu {
   transition: transform 0.3s ease-in-out;
