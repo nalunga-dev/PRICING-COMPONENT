@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-black p-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold text-white">CLOUD</h1>
+        <button
+          id="menu-btn"
+          class="md:hidden text-white focus:outline-none text-2xl"
+        >
+          ☰
+        </button>
+        <div
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 w-full md:w-auto text-gray-300"
+        >
+          <a
+            href="#"
+            class="block md:inline-block py-2 px-4 hover:bg-gray-800 rounded"
+            >Pricing Plan</a
+          >
+          <a
+            href="#"
+            class="block md:inline-block py-2 px-4 hover:bg-gray-800 rounded"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="block md:inline-block py-2 px-4 hover:bg-gray-800 rounded"
+            >Support</a
+          >
+          <a
+            href="#"
+            class="block md:inline-block py-2 px-4 hover:bg-gray-800 rounded"
+            >More</a
+          >
+        </div>
+        <button class="btn-primary px-4 py-2 rounded hidden md:inline-block">
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <header class="text-center py-10">
+      <h2 class="text-3xl font-bold">Choose Cloud Hosting Package</h2>
+      <p class="text-gray-400">
+        Free SSL certificate and one domain on all plans
+      </p>
+      <div class="mt-4">
+        <label class="mr-2">Choose the plan:</label>
+        <button id="togglePlan" class="toggle-btn px-3 py-1 rounded">
+          Monthly
+        </button>
+      </div>
+    </header>
+
+    <section class="flex flex-wrap justify-center gap-6 p-6">
+      <div class="card1 p-6 rounded-lg w-90 text-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/543/543135.png"
+          alt="Cloud Startup"
+          class="mx-auto w-46 rounded-lg"
+        />
+        <h3 class="text-xl font-bold">Cloud Startup</h3>
+        <p class="text-gray-400">For business & eCommerce websites</p>
+        <p class="text-2xl font-bold mt-2">
+          $<span class="price">30</span>/month
+        </p>
+        <ul class="text-left mt-4 space-y-2 text-gray-300">
+          <li class="line-clamp-1">
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            Free Automatic WordPress Installation
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            WordPress Accelerator (Litespeed)
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            WordPress Vulnerabilities Scanner
+          </li>
+        </ul>
+        <button class="btn-primary px-4 py-2 mt-4 rounded">Get Started</button>
+      </div>
+
+      <div class="card2 p-6 rounded-lg w-90 text-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/10165/10165422.png"
+          alt="Cloud Professional"
+          class="mx-auto mb-4 w-46 rounded-lg"
+        />
+        <h3 class="text-xl font-bold">Cloud Professional</h3>
+        <p class="text-gray-400">For developing professional websites</p>
+        <p class="text-2xl font-bold mt-2">
+          $<span class="price">60</span>/month
+        </p>
+        <ul class="text-left mt-4 space-y-2 text-gray-300">
+          <li class="line-clamp-1">
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span> Free
+            Automatic WordPress Installation
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            WordPress Accelerator (Litespeed)
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            WordPress Vulnerabilities Scanner
+          </li>
+          <li class="line-clamp-1">
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span> 150
+            Templates from Designer Professional
+          </li>
+        </ul>
+        <button class="btn-primary px-4 py-2 mt-4 rounded">Get Started</button>
+      </div>
+
+      <div class="card3 p-6 rounded-lg w-90 text-center">
+        <img
+          src="
+          https://cdn-icons-png.flaticon.com/128/543/543084.png
+          "
+          alt="Cloud Enterprise"
+          class="mx-auto mb-4 w-46 rounded-lg"
+        />
+        <h3 class="text-xl font-bold">Cloud Enterprise</h3>
+        <p class="text-gray-400">For optimizing website performance</p>
+        <p class="text-2xl font-bold mt-2">
+          $<span class="price">150</span>/month
+        </p>
+        <ul class="text-left mt-4 space-y-2 text-gray-300">
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span> Free
+            Automatic WordPress Installation
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span
+            >WordPress Accelerator (Litespeed)
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            WordPress Vulnerabilities Scanner
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span> 150
+            Templates from Designer Professional
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span>
+            Cloudflare Protected Nameservers
+          </li>
+          <li>
+            <span><i class="bx bxs-star" style="color: #d3810f"></i></span> Free
+            WHOIS Domain Privacy Protection
+          </li>
+        </ul>
+        <button class="btn-primary px-4 py-2 mt-4 rounded">Get Started</button>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("togglePlan")
+        .addEventListener("click", function () {
+          let prices = document.querySelectorAll(".price");
+          if (this.textContent === "Monthly") {
+            prices[0].textContent = "300";
+            prices[1].textContent = "600";
+            prices[2].textContent = "1500";
+            this.textContent = "Yearly";
+          } else {
+            prices[0].textContent = "30";
+            prices[1].textContent = "60";
+            prices[2].textContent = "150";
+            this.textContent = "Monthly";
+          }
+        });
+    </script>
+  </body>
+</html>
